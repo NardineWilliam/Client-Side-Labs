@@ -1,3 +1,4 @@
+//Using Objects Linking to Other Objects (OLOO)
 const Person3 = {
     init(fullName, money, sleepMood, healthRate) 
     {
