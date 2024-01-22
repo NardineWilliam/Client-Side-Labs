@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(4, 175, 4);
+    overflow: hidden;
+  }
+
+  #page-container {
+    background-color: #e8e8e8;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 40px;
+    border-radius: 10px;
+  }
+
+
+  #todo-container {
+    width: 500px;
+    max-height: 200px;
+    padding: 20px;
+    border: 1px solid #e1dbdb;
+    background-color: rgb(229, 229, 229);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow-y: auto;
+    flex-grow: 1;
+    margin-bottom: 20px; 
+  }
+
+  #task-container {
+    width: 500px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    border-radius: 10px;
+  }
+
+  label {
+    margin-right: 10px;
+  }
+
+  #task-input {
+    flex-grow: 1;
+    padding: 15px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    padding-right: 10px;
+    margin-right: 10px;
+  }
+
+  #add-button {
+    background-color: rgb(34, 86, 216);
+    color: white;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding-left: 10px;
+  }
+
+  .task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 5px;
+  }
+
+  .task .actions {
+    display: flex;
+    align-items: center;
+  }
+
+  .task .done {
+    cursor: pointer;
+    color: green;
+    margin-right: 5px;
+  }
+
+  .task .delete {
+    cursor: pointer;
+    color: red;
+  }
+
+  .task.done {
+    background-color: #d3f5d3;
+  }
+
+  
+ 

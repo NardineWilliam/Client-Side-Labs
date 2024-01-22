@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(22, 170, 22);
+  }
+
+  #login-container {
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 50px;
+    width: 300px;
+    background-color: aliceblue;
+    box-shadow: 5px 5px 25px  #888888;
+  }
+
+  input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    background-color: rgb(227, 225, 225);
+    border: none;
+  }
+
+  button {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: rgb(22, 170, 22);
+    border: none;
+    cursor: pointer;
+    color: aliceblue;
+  }
+
+  #create-account {
+    margin-top: 10px;
+    color: grey;
+  }
+
+  #create-account a {
+    color: rgb(22, 170, 22);
+  }
