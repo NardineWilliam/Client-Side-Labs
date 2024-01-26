@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="part1.css" />
+  </head>
+  <body>
+    <div id="slider-container">
+      <div id="image-slider">
+        <img class="slider-image" src="Images/1.jpg" alt="Image 1" />
+        <img class="slider-image" src="Images/2.jpg" alt="Image 2" />
+        <img class="slider-image" src="Images/3.jpg" alt="Image 3" />
+        <img class="slider-image" src="Images/4.jpg" alt="Image 4" />
+        <img class="slider-image" src="Images/5.jpg" alt="Image 5" />
+        <img class="slider-image" src="Images/6.jpg" alt="Image 6" />
+      </div>
+      <br />
+      <div id="dots-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+      </div>
+      <button id="prev" class="arrow" onclick="shiftSlides(-1)">&#9664;</button>
+      <button id="next" class="arrow" onclick="shiftSlides(1)">&#9654;</button>
+    </div>
+    <script src="part1.js"></script>
+  </body>
+</html>

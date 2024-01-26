@@ -1,0 +1,112 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #cbc7c7;
+}
+
+.outer-rectangle {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 5px;
+}
+
+.inner-rectangle {
+  background-color: #bdbdbd;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.clock-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#alarm-button {
+  background-image: url(Images/alarmClock.png);
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  background-color: #bdbdbd;
+}
+
+.clock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+}
+
+.days {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.time {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+#am-pm {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.alarm-window {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 200px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.alarm-inputs {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: none;
+}
+
+#setAlarm {
+  background-color: rgb(67, 162, 230);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+#clearAlarm {
+  background-color: rgb(233, 115, 115);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+}

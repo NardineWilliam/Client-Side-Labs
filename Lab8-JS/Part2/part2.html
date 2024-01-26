@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Clock with Alarm</title>
+    <link rel="stylesheet" href="part2.css" />
+  </head>
+  <body>
+    <div class="clock-container">
+      <div class="outer-rectangle">
+        <div class="inner-rectangle">
+          <div class="clock">
+            <div class="days">
+              <span id="day"></span>
+            </div>
+            <div class="time">
+              <span id="hours"></span>
+              :
+              <span id="minutes"></span>
+              :
+              <span id="seconds"></span>
+              <span id="am-pm"></span>
+            </div>
+          </div>
+          <button id="alarm-button"></button>
+        </div>
+      </div>
+    </div>
+    <div class="alarm-window" hidden>
+      <button class="close-button">X</button>
+      <h2>Set Alarm After</h2>
+      <div class="alarm-inputs">
+        <label for="alarmHours">Hours</label>
+        <input type="number" id="alarmHours" min="1" max="12" />
+        <label for="alarmMinutes">Minutes</label>
+        <input type="number" id="alarmMinutes" min="0" max="59" />
+        <label for="alarmSeconds">Seconds</label>
+        <input type="number" id="alarmSeconds" min="0" max="59" />
+      </div>
+      <div class="alarm-buttons">
+        <button id="setAlarm">Set</button>
+        <button id="clearAlarm">Clear</button>
+      </div>
+    </div>
+    <script src="part2.js"></script>
+  </body>
+</html>
